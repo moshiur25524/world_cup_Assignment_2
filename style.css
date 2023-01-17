@@ -69,10 +69,11 @@ body {
 
 /* Main Section part */
 
-.main-part{
+.main-part {
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
+
 /* width: 312px; */
 .side-bar {
     height: 230px;
@@ -96,12 +97,12 @@ body {
     cursor: pointer;
 }
 
- .special{
+.special {
     background-color: #0000ff;
     color: #fff;
 }
 
-.side-buttons button:active{
+.side-buttons button:active {
     background-color: #0000ff;
 }
 
@@ -146,6 +147,14 @@ body {
     border: 1px solid #161616;
     padding: 8px 16px;
     background-color: transparent;
+    cursor: pointer;
+    transition: .8s;
+}
+.blog-details button:hover {
+    color: #fff;
+    border: 1px solid #161616;
+    padding: 8px 16px;
+    background-color: #0000ff;
     cursor: pointer;
 }
 
@@ -197,26 +206,68 @@ footer {
     margin: 0 10px;
 }
 
-/* ----------------- Responsive Design ----------------- */
-
-@media only screen and (max-width: 768px){
-.banner , .blogs{
-    grid-template-columns: 1fr;
-}
-.main-part{
-    display: flex;
-    flex-direction: column;
-    /* grid-template-columns: 1fr 1fr; */
+/* Style for match.html */
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
-.side-buttons{
-    width: 100%;
+.match {
+    height: 242px;
+    width: 312px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.match-details {
+    /* border: 1px solid tomato; */
+}
+
+.flags {
+    display: flex;
     align-items: center;
 }
 
-.side-bar{
-background-color: transparent;
+.flag-image img {
+    width: 100%;
 }
+
+.versus{
+    margin: 0 20px;
+}
+
+/* ----------------- Responsive Design ----------------- */
+
+@media only screen and (max-width: 768px) {
+
+    .banner,
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+
+    .main-part {
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr; */
+    }
+
+    .side-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-bar {
+        background-color: transparent;
+    }
+
+    footer {
+        display: none;
+    }
 }
