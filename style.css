@@ -7,7 +7,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 50px;
 }
@@ -35,6 +35,28 @@ body {
     color: #fff;
 }
 
+.banner-left h1 {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.banner-left p {
+    line-height: 26px;
+}
+
+.banner-left .red-button{
+    outline: 0;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 16px 25px;
+    border-radius: 5px;
+    background-color: #DD0000;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
 .banner-right {
     display: flex;
     justify-content: center;
@@ -58,8 +80,8 @@ body {
     align-items: center;
 }
 
-.side-buttons{
-  padding: 30px;
+.side-buttons {
+    padding: 30px;
 }
 
 /* Blogs Styles */
@@ -96,4 +118,12 @@ body {
 
 .blog-details {
     padding: 20px;
+}
+
+.blog-details button{
+    color: #161616;
+    border: 1px solid #161616;
+    padding: 8px 16px;
+    background-color: transparent;
+    cursor: pointer;
 }
