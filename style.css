@@ -61,11 +61,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    overflow: hidden;
 }
 
 .banner-right img {
     width: 100%;
+    transition: transform 1.5s ease;
 }
+.banner-right img:hover{
+    transform: scale(1.5);
+}
+
 
 /* Main Section part */
 
